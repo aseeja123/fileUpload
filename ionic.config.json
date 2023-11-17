@@ -1,0 +1,7 @@
+{
+  "name": "fileUpload",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
