@@ -5,15 +5,19 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-
+import { MultiFileUploadComponent } from '../components/multi-file-upload/multi-file-upload.component';
+import { FileUploadModule } from 'ng2-file-upload';
+import {Storage} from '@angular/fire/storage'
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    FileUploadModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,MultiFileUploadComponent],
+  providers:[Storage]
 })
 export class HomePageModule {}
